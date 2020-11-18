@@ -1,0 +1,633 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="cd3df05dd4c51136144e3ccf" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityContainer Name="cd3df05dd4c51136144e3ccf_Entities" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="InsumosSet" EntityType="cd3df05dd4c51136144e3ccf.Insumos" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"
+					Association="cd3df05dd4c51136144e3ccf.InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="InsumosSet" Role="FromRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+					<End EntitySet="InsumosEnHojaDeGastoSet" Role="ToRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				</AssociationSet>
+				<AssociationSet Name="InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"
+					Association="cd3df05dd4c51136144e3ccf.InsumosItemOrdenDeIngresoItemsOrdenDeIngreso" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="InsumosSet" Role="FromRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"/>
+					<End EntitySet="ItemsOrdenDeIngresoSet" Role="ToRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"/>
+				</AssociationSet>
+				<EntitySet Name="ProductosSet" EntityType="cd3df05dd4c51136144e3ccf.Productos" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="ProductosObjectInsumos" Association="cd3df05dd4c51136144e3ccf.ProductosObjectInsumos" sap:creatable="true"
+					sap:updatable="true" sap:deletable="true">
+					<End EntitySet="ProductosSet" Role="FromRole_ProductosObjectInsumos"/>
+					<End EntitySet="InsumosSet" Role="ToRole_ProductosObjectInsumos"/>
+				</AssociationSet>
+				<AssociationSet Name="ProductosProveedoresProveedores" Association="cd3df05dd4c51136144e3ccf.ProductosProveedoresProveedores"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="ProductosSet" Role="FromRole_ProductosProveedoresProveedores"/>
+					<End EntitySet="ProveedoresSet" Role="ToRole_ProductosProveedoresProveedores"/>
+				</AssociationSet>
+				<EntitySet Name="HojasDeGastoSet" EntityType="cd3df05dd4c51136144e3ccf.HojasDeGasto" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"
+					Association="cd3df05dd4c51136144e3ccf.HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="HojasDeGastoSet" Role="FromRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+					<End EntitySet="InsumosEnHojaDeGastoSet" Role="ToRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				</AssociationSet>
+				<EntitySet Name="InsumosEnHojaDeGastoSet" EntityType="cd3df05dd4c51136144e3ccf.InsumosEnHojaDeGasto" sap:creatable="true"
+					sap:updatable="true" sap:deletable="true"/>
+				<EntitySet Name="PedidosSet" EntityType="cd3df05dd4c51136144e3ccf.Pedidos" sap:creatable="true" sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="PedidosProveedoresProveedores" Association="cd3df05dd4c51136144e3ccf.PedidosProveedoresProveedores"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="PedidosSet" Role="FromRole_PedidosProveedoresProveedores"/>
+					<End EntitySet="ProveedoresSet" Role="ToRole_PedidosProveedoresProveedores"/>
+				</AssociationSet>
+				<EntitySet Name="CategoriasDeProductosSet" EntityType="cd3df05dd4c51136144e3ccf.CategoriasDeProductos" sap:creatable="true"
+					sap:updatable="true" sap:deletable="true"/>
+				<AssociationSet Name="CategoriasDeProductosProductosProductos"
+					Association="cd3df05dd4c51136144e3ccf.CategoriasDeProductosProductosProductos" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="CategoriasDeProductosSet" Role="FromRole_CategoriasDeProductosProductosProductos"/>
+					<End EntitySet="ProductosSet" Role="ToRole_CategoriasDeProductosProductosProductos"/>
+				</AssociationSet>
+				<EntitySet Name="OrdenesDeCompraSet" EntityType="cd3df05dd4c51136144e3ccf.OrdenesDeCompra" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"
+					Association="cd3df05dd4c51136144e3ccf.OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="OrdenesDeCompraSet" Role="FromRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"/>
+					<End EntitySet="ItemsOrdenDeCompraSet" Role="ToRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"/>
+				</AssociationSet>
+				<AssociationSet Name="OrdenesDeCompraListaDePedidosPedidos" Association="cd3df05dd4c51136144e3ccf.OrdenesDeCompraListaDePedidosPedidos"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="OrdenesDeCompraSet" Role="FromRole_OrdenesDeCompraListaDePedidosPedidos"/>
+					<End EntitySet="PedidosSet" Role="ToRole_OrdenesDeCompraListaDePedidosPedidos"/>
+				</AssociationSet>
+				<AssociationSet Name="OrdenesDeCompraProveedoresProveedores" Association="cd3df05dd4c51136144e3ccf.OrdenesDeCompraProveedoresProveedores"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="OrdenesDeCompraSet" Role="FromRole_OrdenesDeCompraProveedoresProveedores"/>
+					<End EntitySet="ProveedoresSet" Role="ToRole_OrdenesDeCompraProveedoresProveedores"/>
+				</AssociationSet>
+				<EntitySet Name="ItemsOrdenDeCompraSet" EntityType="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompra" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="ItemsOrdenDeCompraProductosProductos" Association="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompraProductosProductos"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="ItemsOrdenDeCompraSet" Role="FromRole_ItemsOrdenDeCompraProductosProductos"/>
+					<End EntitySet="ProductosSet" Role="ToRole_ItemsOrdenDeCompraProductosProductos"/>
+				</AssociationSet>
+				<AssociationSet Name="ItemsOrdenDeCompraItemListaDePedidosItemPedidos"
+					Association="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompraItemListaDePedidosItemPedidos" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="ItemsOrdenDeCompraSet" Role="FromRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos"/>
+					<End EntitySet="ItemPedidosSet" Role="ToRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos"/>
+				</AssociationSet>
+				<EntitySet Name="OrdenesDeIngresoSet" EntityType="cd3df05dd4c51136144e3ccf.OrdenesDeIngreso" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"
+					Association="cd3df05dd4c51136144e3ccf.OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="OrdenesDeIngresoSet" Role="FromRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"/>
+					<End EntitySet="OrdenesDeCompraSet" Role="ToRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"/>
+				</AssociationSet>
+				<EntitySet Name="ItemsOrdenDeIngresoSet" EntityType="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngreso" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"
+					Association="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="ItemsOrdenDeIngresoSet" Role="FromRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"/>
+					<End EntitySet="OrdenesDeIngresoSet" Role="ToRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"/>
+				</AssociationSet>
+				<AssociationSet Name="ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"
+					Association="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="ItemsOrdenDeIngresoSet" Role="FromRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"/>
+					<End EntitySet="ItemsOrdenDeCompraSet" Role="ToRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"/>
+				</AssociationSet>
+				<EntitySet Name="OrdenesDeSalidaSet" EntityType="cd3df05dd4c51136144e3ccf.OrdenesDeSalida" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<EntitySet Name="ItemsOrdenDeSalidaSet" EntityType="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalida" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="ItemsOrdenDeSalidaInsumosInsumos" Association="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalidaInsumosInsumos"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="ItemsOrdenDeSalidaSet" Role="FromRole_ItemsOrdenDeSalidaInsumosInsumos"/>
+					<End EntitySet="InsumosSet" Role="ToRole_ItemsOrdenDeSalidaInsumosInsumos"/>
+				</AssociationSet>
+				<AssociationSet Name="ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"
+					Association="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true">
+					<End EntitySet="ItemsOrdenDeSalidaSet" Role="FromRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"/>
+					<End EntitySet="OrdenesDeSalidaSet" Role="ToRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"/>
+				</AssociationSet>
+				<EntitySet Name="ItemPedidosSet" EntityType="cd3df05dd4c51136144e3ccf.ItemPedidos" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+				<AssociationSet Name="ItemPedidosListaDePedidosPedidos" Association="cd3df05dd4c51136144e3ccf.ItemPedidosListaDePedidosPedidos"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="ItemPedidosSet" Role="FromRole_ItemPedidosListaDePedidosPedidos"/>
+					<End EntitySet="PedidosSet" Role="ToRole_ItemPedidosListaDePedidosPedidos"/>
+				</AssociationSet>
+				<AssociationSet Name="ItemPedidosProductosProductos" Association="cd3df05dd4c51136144e3ccf.ItemPedidosProductosProductos"
+					sap:creatable="true" sap:updatable="true" sap:deletable="true">
+					<End EntitySet="ItemPedidosSet" Role="FromRole_ItemPedidosProductosProductos"/>
+					<End EntitySet="ProductosSet" Role="ToRole_ItemPedidosProductosProductos"/>
+				</AssociationSet>
+				<EntitySet Name="ProveedoresSet" EntityType="cd3df05dd4c51136144e3ccf.Proveedores" sap:creatable="true" sap:updatable="true"
+					sap:deletable="true"/>
+			</EntityContainer>
+			<EntityType Name="Insumos">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+				<Property Name="Cantidad" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CantidadActual"/>
+				<Property Name="UnidadMedida" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="UnidadMedida"/>
+				<Property Name="Lote" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Lote"/>
+				<Property Name="FechaVencimiento" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:display-format="Date" sap:label="FechaVencimiento"/>
+				<Property Name="FechaCarga" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:display-format="Date"
+					sap:label="FechaCarga"/>
+				<Property Name="Bodega" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Bodega"/>
+				<Property Name="ValorUnitario" Type="Edm.Double" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ValorUnitario"/>
+				<Property Name="ValorUnitarioConIVA" Type="Edm.Double" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="ValorUnitarioConIVA"/>
+				<Property Name="ValorTotal" Type="Edm.Double" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ValorTotal"/>
+				<Property Name="ValorTotalConIVA" Type="Edm.Double" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="ValorTotalConIVA"/>
+				<Property Name="___FK_5eb0f6b2f14e16b3144e5748_00010" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_5eb0f6b2f14e16b3144e5748_00010"/>
+				<Property Name="IDProducto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="IDProducto"/>
+				<Property Name="___FK_19228ec8467af31c14620a0b_00028" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_19228ec8467af31c14620a0b_00028"/>
+				<NavigationProperty Name="InsumosEnHojaDeGasto" Relationship="cd3df05dd4c51136144e3ccf.InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"
+					FromRole="FromRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto" ToRole="ToRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				<NavigationProperty Name="ItemOrdenDeIngreso" Relationship="cd3df05dd4c51136144e3ccf.InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"
+					FromRole="FromRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso" ToRole="ToRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"/>
+			</EntityType>
+			<Association Name="InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto">
+				<End Type="cd3df05dd4c51136144e3ccf.Insumos" Multiplicity="1" Role="FromRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				<End Type="cd3df05dd4c51136144e3ccf.InsumosEnHojaDeGasto" Multiplicity="*" Role="ToRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_InsumosInsumosEnHojaDeGastoInsumosEnHojaDeGasto">
+						<PropertyRef Name="___FK_c7315f01b16170cc144e7cbf_00018"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="InsumosItemOrdenDeIngresoItemsOrdenDeIngreso">
+				<End Type="cd3df05dd4c51136144e3ccf.Insumos" Multiplicity="1" Role="FromRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"/>
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngreso" Multiplicity="1" Role="ToRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_InsumosItemOrdenDeIngresoItemsOrdenDeIngreso">
+						<PropertyRef Name="___FK_19228ec8467af31c14620a0b_00028"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="Productos">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+				<Property Name="NombreComercial" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="NombreComercial"/>
+				<Property Name="CategoriaProducto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="CategoriaProducto"/>
+				<Property Name="CantidadMinima" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CantidadMinima"/>
+				<Property Name="CantidadActual" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CantidadActual"/>
+				<Property Name="UnidadMedida" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="UnidadMedida"/>
+				<Property Name="FormaFarmaceutica" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="FormaFarmaceutica"/>
+				<Property Name="ValorIva" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ValorIva"/>
+				<Property Name="___FK_1c25ed959193c6211454d4a4_00003" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_1c25ed959193c6211454d4a4_00003"/>
+				<Property Name="Proveedor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Proveedor"/>
+				<Property Name="___FK_6275a90361ff71251463749d_00005" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_6275a90361ff71251463749d_00005"/>
+				<NavigationProperty Name="Object" Relationship="cd3df05dd4c51136144e3ccf.ProductosObjectInsumos" FromRole="FromRole_ProductosObjectInsumos"
+					ToRole="ToRole_ProductosObjectInsumos"/>
+				<NavigationProperty Name="Proveedores" Relationship="cd3df05dd4c51136144e3ccf.ProductosProveedoresProveedores"
+					FromRole="FromRole_ProductosProveedoresProveedores" ToRole="ToRole_ProductosProveedoresProveedores"/>
+			</EntityType>
+			<Association Name="ProductosObjectInsumos">
+				<End Type="cd3df05dd4c51136144e3ccf.Productos" Multiplicity="1" Role="FromRole_ProductosObjectInsumos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Insumos" Multiplicity="*" Role="ToRole_ProductosObjectInsumos"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_ProductosObjectInsumos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_ProductosObjectInsumos">
+						<PropertyRef Name="___FK_5eb0f6b2f14e16b3144e5748_00010"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ProductosProveedoresProveedores">
+				<End Type="cd3df05dd4c51136144e3ccf.Productos" Multiplicity="1" Role="FromRole_ProductosProveedoresProveedores"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Proveedores" Multiplicity="1" Role="ToRole_ProductosProveedoresProveedores"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ProductosProveedoresProveedores">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ProductosProveedoresProveedores">
+						<PropertyRef Name="___FK_6275a90361ff71251463749d_00005"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="HojasDeGasto">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="Paciente" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Paciente"/>
+				<Property Name="Ojo" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Ojo"/>
+				<Property Name="Cirugia" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cirugia"/>
+				<Property Name="FechaProcedimiento" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:display-format="Date" sap:label="FechaProcedimiento"/>
+				<Property Name="Estatus" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Estatus"/>
+				<NavigationProperty Name="InsumosEnHojaDeGasto" Relationship="cd3df05dd4c51136144e3ccf.HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"
+					FromRole="FromRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"
+					ToRole="ToRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+			</EntityType>
+			<Association Name="HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto">
+				<End Type="cd3df05dd4c51136144e3ccf.HojasDeGasto" Multiplicity="1" Role="FromRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				<End Type="cd3df05dd4c51136144e3ccf.InsumosEnHojaDeGasto" Multiplicity="*"
+					Role="ToRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_HojasDeGastoInsumosEnHojaDeGastoInsumosEnHojaDeGasto">
+						<PropertyRef Name="___FK_c7315f01b16170cc144e7cbf_00016"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="InsumosEnHojaDeGasto">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="modificable" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="modificable"/>
+				<Property Name="NombreProducto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Producto"/>
+				<Property Name="Lote" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Lote"/>
+				<Property Name="CantidadEntregada" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="CantidadEntregada"/>
+				<Property Name="CantidadGastada" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="CantGastada"/>
+				<Property Name="Revisado" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Revisado"/>
+				<Property Name="Oservaciones" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Oservaciones"/>
+				<Property Name="IDHojaDeGasto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="IDHojaDeGasto"/>
+				<Property Name="___FK_c7315f01b16170cc144e7cbf_00016" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_c7315f01b16170cc144e7cbf_00016"/>
+				<Property Name="___FK_c7315f01b16170cc144e7cbf_00018" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_c7315f01b16170cc144e7cbf_00018"/>
+			</EntityType>
+			<EntityType Name="Pedidos">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="FechaDeGeneracion" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:display-format="Date" sap:label="FechaDeGeneracion"/>
+				<Property Name="RealizadoPor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RealizadoPor"/>
+				<Property Name="BodegaDeDestino" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="AlmacenDeDestino"/>
+				<Property Name="Revisado" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Revisado"/>
+				<Property Name="Entregado" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Entregado"/>
+				<Property Name="Proveedor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Proveedor"/>
+				<Property Name="RevisadoPor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RevisadoPor"/>
+				<Property Name="Area" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Area"/>
+				<Property Name="___FK_6275a90361ff71251463749d_00016" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_6275a90361ff71251463749d_00016"/>
+				<NavigationProperty Name="Proveedores" Relationship="cd3df05dd4c51136144e3ccf.PedidosProveedoresProveedores"
+					FromRole="FromRole_PedidosProveedoresProveedores" ToRole="ToRole_PedidosProveedoresProveedores"/>
+			</EntityType>
+			<Association Name="PedidosProveedoresProveedores">
+				<End Type="cd3df05dd4c51136144e3ccf.Pedidos" Multiplicity="1" Role="FromRole_PedidosProveedoresProveedores"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Proveedores" Multiplicity="1" Role="ToRole_PedidosProveedoresProveedores"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_PedidosProveedoresProveedores">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_PedidosProveedoresProveedores">
+						<PropertyRef Name="___FK_6275a90361ff71251463749d_00016"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="CategoriasDeProductos">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="NombreCategoria" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="NombreCategoria"/>
+				<NavigationProperty Name="Productos" Relationship="cd3df05dd4c51136144e3ccf.CategoriasDeProductosProductosProductos"
+					FromRole="FromRole_CategoriasDeProductosProductosProductos" ToRole="ToRole_CategoriasDeProductosProductosProductos"/>
+			</EntityType>
+			<Association Name="CategoriasDeProductosProductosProductos">
+				<End Type="cd3df05dd4c51136144e3ccf.CategoriasDeProductos" Multiplicity="1" Role="FromRole_CategoriasDeProductosProductosProductos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Productos" Multiplicity="*" Role="ToRole_CategoriasDeProductosProductosProductos"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_CategoriasDeProductosProductosProductos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_CategoriasDeProductosProductosProductos">
+						<PropertyRef Name="___FK_1c25ed959193c6211454d4a4_00003"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="OrdenesDeCompra">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="Destino" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="NombreCategoria"/>
+				<Property Name="TerminosEntrega" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="TerminosEntrega"/>
+				<Property Name="RealizadoPor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RealizadoPor"/>
+				<Property Name="AprobadoPor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="AprobadoPor"/>
+				<Property Name="RevisadoPor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="RevisadoPor"/>
+				<Property Name="TerminosPago" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="TerminosPago"/>
+				<Property Name="Cargada" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cargada"/>
+				<Property Name="Cerrada" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cerrada"/>
+				<Property Name="Proveedor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Proveedor"/>
+				<Property Name="___FK_c6035ee7cb2cfdd214621954_00018" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_c6035ee7cb2cfdd214621954_00018"/>
+				<Property Name="___FK_6275a90361ff71251463749d_00012" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_6275a90361ff71251463749d_00012"/>
+				<NavigationProperty Name="ItemOrdenDeCompra" Relationship="cd3df05dd4c51136144e3ccf.OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"
+					FromRole="FromRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra" ToRole="ToRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"/>
+				<NavigationProperty Name="ListaDePedidos" Relationship="cd3df05dd4c51136144e3ccf.OrdenesDeCompraListaDePedidosPedidos"
+					FromRole="FromRole_OrdenesDeCompraListaDePedidosPedidos" ToRole="ToRole_OrdenesDeCompraListaDePedidosPedidos"/>
+				<NavigationProperty Name="Proveedores" Relationship="cd3df05dd4c51136144e3ccf.OrdenesDeCompraProveedoresProveedores"
+					FromRole="FromRole_OrdenesDeCompraProveedoresProveedores" ToRole="ToRole_OrdenesDeCompraProveedoresProveedores"/>
+			</EntityType>
+			<Association Name="OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra">
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeCompra" Multiplicity="1" Role="FromRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"/>
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompra" Multiplicity="*" Role="ToRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra"/>
+				<ReferentialConstraint>
+					<Principal Role="FromRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="ToRole_OrdenesDeCompraItemOrdenDeCompraItemsOrdenDeCompra">
+						<PropertyRef Name="___FK_d4486a61ce9f028314561caf_00002"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OrdenesDeCompraListaDePedidosPedidos">
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeCompra" Multiplicity="1" Role="FromRole_OrdenesDeCompraListaDePedidosPedidos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Pedidos" Multiplicity="1" Role="ToRole_OrdenesDeCompraListaDePedidosPedidos"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_OrdenesDeCompraListaDePedidosPedidos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_OrdenesDeCompraListaDePedidosPedidos">
+						<PropertyRef Name="___FK_c6035ee7cb2cfdd214621954_00018"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="OrdenesDeCompraProveedoresProveedores">
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeCompra" Multiplicity="1" Role="FromRole_OrdenesDeCompraProveedoresProveedores"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Proveedores" Multiplicity="1" Role="ToRole_OrdenesDeCompraProveedoresProveedores"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_OrdenesDeCompraProveedoresProveedores">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_OrdenesDeCompraProveedoresProveedores">
+						<PropertyRef Name="___FK_6275a90361ff71251463749d_00012"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="ItemsOrdenDeCompra">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="IDProducto" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="IDProducto"/>
+				<Property Name="CantidadSolicitada" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Cantidad"/>
+				<Property Name="CantidadEntregada" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="CantidadEntregada"/>
+				<Property Name="___FK_d4486a61ce9f028314561caf_00002" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_d4486a61ce9f028314561caf_00002"/>
+				<Property Name="___FK_d4486a61ce9f028314561caf_00006" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_d4486a61ce9f028314561caf_00006"/>
+				<Property Name="ValorUnitario" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ValorUnitario"/>
+				<Property Name="ValorUnitarioIva" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="ValorUnitarioIva"/>
+				<Property Name="ValorTotal" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ValorTotal"/>
+				<Property Name="ValorTotalIva" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ValorTotalIva"/>
+				<Property Name="___FK_c6035ee7cb2cfdd214621954_00014" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_c6035ee7cb2cfdd214621954_00014"/>
+				<NavigationProperty Name="Productos" Relationship="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompraProductosProductos"
+					FromRole="FromRole_ItemsOrdenDeCompraProductosProductos" ToRole="ToRole_ItemsOrdenDeCompraProductosProductos"/>
+				<NavigationProperty Name="ItemListaDePedidos" Relationship="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompraItemListaDePedidosItemPedidos"
+					FromRole="FromRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos" ToRole="ToRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos"/>
+			</EntityType>
+			<Association Name="ItemsOrdenDeCompraProductosProductos">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompra" Multiplicity="1" Role="FromRole_ItemsOrdenDeCompraProductosProductos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Productos" Multiplicity="1" Role="ToRole_ItemsOrdenDeCompraProductosProductos"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemsOrdenDeCompraProductosProductos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemsOrdenDeCompraProductosProductos">
+						<PropertyRef Name="___FK_d4486a61ce9f028314561caf_00006"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ItemsOrdenDeCompraItemListaDePedidosItemPedidos">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompra" Multiplicity="1" Role="FromRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.ItemPedidos" Multiplicity="1" Role="ToRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemsOrdenDeCompraItemListaDePedidosItemPedidos">
+						<PropertyRef Name="___FK_c6035ee7cb2cfdd214621954_00014"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="OrdenesDeIngreso">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="___FK_19228ec8467af31c14620a0b_00009" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_19228ec8467af31c14620a0b_00009"/>
+				<Property Name="NumeroDeRemision" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="NumeroDeRemision"/>
+				<Property Name="Remision" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Remision"/>
+				<Property Name="NumeroDeFactura" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="NumeroDeFactura"/>
+				<NavigationProperty Name="OrdenesDeCompra" Relationship="cd3df05dd4c51136144e3ccf.OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"
+					FromRole="FromRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra" ToRole="ToRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"/>
+			</EntityType>
+			<Association Name="OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra">
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeIngreso" Multiplicity="1" Role="FromRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"/>
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeCompra" Multiplicity="1" Role="ToRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_OrdenesDeIngresoOrdenesDeCompraOrdenesDeCompra">
+						<PropertyRef Name="___FK_19228ec8467af31c14620a0b_00009"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="ItemsOrdenDeIngreso">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="___FK_19228ec8467af31c14620a0b_00018" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_19228ec8467af31c14620a0b_00018"/>
+				<Property Name="___FK_19228ec8467af31c14620a0b_00024" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_19228ec8467af31c14620a0b_00024"/>
+				<Property Name="CantidadIngresada" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="CantidadIngresada"/>
+				<Property Name="FechaDeVencimiento" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:display-format="Date" sap:label="FechaDeVencimiento"/>
+				<Property Name="Lote" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Lote"/>
+				<NavigationProperty Name="OrdenDeIngreso" Relationship="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"
+					FromRole="FromRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso" ToRole="ToRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"/>
+				<NavigationProperty Name="ItemOrdenDeCompra" Relationship="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"
+					FromRole="FromRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"
+					ToRole="ToRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"/>
+			</EntityType>
+			<Association Name="ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngreso" Multiplicity="1" Role="FromRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"/>
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeIngreso" Multiplicity="1" Role="ToRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemsOrdenDeIngresoOrdenDeIngresoOrdenesDeIngreso">
+						<PropertyRef Name="___FK_19228ec8467af31c14620a0b_00018"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeIngreso" Multiplicity="1"
+					Role="FromRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"/>
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeCompra" Multiplicity="1"
+					Role="ToRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemsOrdenDeIngresoItemOrdenDeCompraItemsOrdenDeCompra">
+						<PropertyRef Name="___FK_19228ec8467af31c14620a0b_00024"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="OrdenesDeSalida">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="FechaDeGeneracion" Type="Edm.DateTime" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:display-format="Date" sap:label="FechaDeGeneracion"/>
+				<Property Name="EstadoEnvio" Type="Edm.Boolean" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="EstadoEnvio"/>
+				<Property Name="GeneradoPor" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="GeneradoPor"/>
+				<Property Name="EntregadoA" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="EntregadoA"/>
+				<Property Name="Origen" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Origen"/>
+				<Property Name="Destino" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Destino"/>
+			</EntityType>
+			<EntityType Name="ItemsOrdenDeSalida">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="___FK_0dcbb5d41a08e35314620dc8_00009" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_0dcbb5d41a08e35314620dc8_00009"/>
+				<Property Name="___FK_0dcbb5d41a08e35314620dc8_00011" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_0dcbb5d41a08e35314620dc8_00011"/>
+				<Property Name="CantidadRequerida" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="CantidadRequerida"/>
+				<Property Name="Observaciones" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Observaciones"/>
+				<NavigationProperty Name="Insumos" Relationship="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalidaInsumosInsumos"
+					FromRole="FromRole_ItemsOrdenDeSalidaInsumosInsumos" ToRole="ToRole_ItemsOrdenDeSalidaInsumosInsumos"/>
+				<NavigationProperty Name="OrdenesDeSalida" Relationship="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"
+					FromRole="FromRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida" ToRole="ToRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"/>
+			</EntityType>
+			<Association Name="ItemsOrdenDeSalidaInsumosInsumos">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalida" Multiplicity="1" Role="FromRole_ItemsOrdenDeSalidaInsumosInsumos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Insumos" Multiplicity="1" Role="ToRole_ItemsOrdenDeSalidaInsumosInsumos"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemsOrdenDeSalidaInsumosInsumos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemsOrdenDeSalidaInsumosInsumos">
+						<PropertyRef Name="___FK_0dcbb5d41a08e35314620dc8_00009"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemsOrdenDeSalida" Multiplicity="1" Role="FromRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"/>
+				<End Type="cd3df05dd4c51136144e3ccf.OrdenesDeSalida" Multiplicity="1" Role="ToRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemsOrdenDeSalidaOrdenesDeSalidaOrdenesDeSalida">
+						<PropertyRef Name="___FK_0dcbb5d41a08e35314620dc8_00011"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="ItemPedidos">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="___FK_c6035ee7cb2cfdd214621954_00006" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_c6035ee7cb2cfdd214621954_00006"/>
+				<Property Name="___FK_c6035ee7cb2cfdd214621954_00010" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="___FK_c6035ee7cb2cfdd214621954_00010"/>
+				<Property Name="CantidadASolicitar" Type="Edm.Decimal" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="CantidadASolicitar"/>
+				<NavigationProperty Name="ListaDePedidos" Relationship="cd3df05dd4c51136144e3ccf.ItemPedidosListaDePedidosPedidos"
+					FromRole="FromRole_ItemPedidosListaDePedidosPedidos" ToRole="ToRole_ItemPedidosListaDePedidosPedidos"/>
+				<NavigationProperty Name="Productos" Relationship="cd3df05dd4c51136144e3ccf.ItemPedidosProductosProductos"
+					FromRole="FromRole_ItemPedidosProductosProductos" ToRole="ToRole_ItemPedidosProductosProductos"/>
+			</EntityType>
+			<Association Name="ItemPedidosListaDePedidosPedidos">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemPedidos" Multiplicity="1" Role="FromRole_ItemPedidosListaDePedidosPedidos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Pedidos" Multiplicity="1" Role="ToRole_ItemPedidosListaDePedidosPedidos"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemPedidosListaDePedidosPedidos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemPedidosListaDePedidosPedidos">
+						<PropertyRef Name="___FK_c6035ee7cb2cfdd214621954_00006"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="ItemPedidosProductosProductos">
+				<End Type="cd3df05dd4c51136144e3ccf.ItemPedidos" Multiplicity="1" Role="FromRole_ItemPedidosProductosProductos"/>
+				<End Type="cd3df05dd4c51136144e3ccf.Productos" Multiplicity="1" Role="ToRole_ItemPedidosProductosProductos"/>
+				<ReferentialConstraint>
+					<Principal Role="ToRole_ItemPedidosProductosProductos">
+						<PropertyRef Name="ID"/>
+					</Principal>
+					<Dependent Role="FromRole_ItemPedidosProductosProductos">
+						<PropertyRef Name="___FK_c6035ee7cb2cfdd214621954_00010"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityType Name="Proveedores">
+				<Key>
+					<PropertyRef Name="ID"/>
+				</Key>
+				<Property Name="ID" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="ID"/>
+				<Property Name="Nombre" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Nombre"/>
+				<Property Name="Direccion" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:label="Direccion"/>
+				<Property Name="NumeroTelefonico" Type="Edm.String" sap:creatable="true" sap:updatable="true" sap:deletable="true"
+					sap:label="NumeroTelefonico"/>
+			</EntityType>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

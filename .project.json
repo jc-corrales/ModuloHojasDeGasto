@@ -1,0 +1,13 @@
+{
+	"dataBinding": {
+		"/webapp/view/VistaHojasDeGasto.view.xml": {
+			"entitySet": ""
+		},
+		"/webapp/view/DetalleHojaDeGasto.view.xml": {
+			"entitySet": "/HojasDeGastoSet"
+		},
+		"/webapp/view/NuevaHojaDeGastos.view.xml": {
+			"entitySet": ""
+		}
+	}
+}

@@ -1,0 +1,40 @@
+[{
+	"ID": "1",
+	"Nombre": "Aplicadores",
+	"NombreComercial": "Aplicador Marca #####",
+	"CategoriaProducto": "10",
+	"CantidadMinima": 10,
+	"CantidadActual": 13,
+	"UnidadMedida": "Unidad",
+	"FormaFarmaceutica": "Insumo",
+	"ValorIva": 19,
+	"___FK_1c25ed959193c6211454d4a4_00003": "10",
+	"Proveedor": "Proveedor 34",
+	"___FK_6275a90361ff71251463749d_00005": ""
+}, {
+	"ID": "2",
+	"Nombre": "Agua Estéril Bolsa x 500 ml",
+	"NombreComercial": "Agua Estéril Bolsa x 500 ml",
+	"CategoriaProducto": "11",
+	"CantidadMinima": 10,
+	"CantidadActual": 5,
+	"UnidadMedida": "Unidad",
+	"FormaFarmaceutica": "Insumo",
+	"ValorIva": 19,
+	"___FK_1c25ed959193c6211454d4a4_00003": "11",
+	"Proveedor": "Proveedor 35",
+	"___FK_6275a90361ff71251463749d_00005": ""
+}, {
+	"ID": "3",
+	"Nombre": "Cuchillete 22",
+	"NombreComercial": "Cuchillete 22 de ####",
+	"CategoriaProducto": "10",
+	"CantidadMinima": 5,
+	"CantidadActual": 2,
+	"UnidadMedida": "Unidad",
+	"FormaFarmaceutica": "N/A",
+	"ValorIva": 16,
+	"___FK_1c25ed959193c6211454d4a4_00003": "10",
+	"Proveedor": "Proveedor 30",
+	"___FK_6275a90361ff71251463749d_00005": ""
+}]

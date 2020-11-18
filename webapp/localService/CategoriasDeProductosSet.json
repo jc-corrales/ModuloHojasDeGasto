@@ -1,0 +1,43 @@
+[{
+	"ID": "1",
+	"NombreCategoria": "Activos"
+}, {
+	"ID": "2",
+	"NombreCategoria": "Aseo"
+}, {
+	"ID": "3",
+	"NombreCategoria": "Cafetería"
+}, {
+	"ID": "4",
+	"NombreCategoria": "Cámara Mantenedora 20 G"
+}, {
+	"ID": "5",
+	"NombreCategoria": "Cánula Mantenedora en silicón 20 G"
+}, {
+	"ID": "6",
+	"NombreCategoria": "Dotación"
+}, {
+	"ID": "7",
+	"NombreCategoria": "Kits para paciente"
+}, {
+	"ID": "8",
+	"NombreCategoria": "Lentes"
+}, {
+	"ID": "9",
+	"NombreCategoria": "Mantenimiento"
+}, {
+	"ID": "10",
+	"NombreCategoria": "Material médico quirúrgico"
+}, {
+	"ID": "11",
+	"NombreCategoria": "Medicamento"
+}, {
+	"ID": "12",
+	"NombreCategoria": "Papelería"
+}, {
+	"ID": "13",
+	"NombreCategoria": "Repuestos"
+}, {
+	"ID": "14",
+	"NombreCategoria": "Voriconazol Colirio 1%"
+}]

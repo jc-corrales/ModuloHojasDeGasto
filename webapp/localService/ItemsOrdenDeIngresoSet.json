@@ -1,0 +1,71 @@
+[{
+	"ID": "0",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 4261.8,
+	"FechaDeVencimiento": "/Date(1191107530000)/",
+	"Lote": ""
+}, {
+	"ID": "1",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 9064.39,
+	"FechaDeVencimiento": "/Date(1308957130000)/",
+	"Lote": ""
+}, {
+	"ID": "2",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 7683.3,
+	"FechaDeVencimiento": "/Date(1338246730000)/",
+	"Lote": ""
+}, {
+	"ID": "3",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 5066.27,
+	"FechaDeVencimiento": "/Date(1330384330000)/",
+	"Lote": ""
+}, {
+	"ID": "4",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 5109.78,
+	"FechaDeVencimiento": "/Date(1057965130000)/",
+	"Lote": ""
+}, {
+	"ID": "5",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 3265.29,
+	"FechaDeVencimiento": "/Date(1298589130000)/",
+	"Lote": ""
+}, {
+	"ID": "6",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 2810.71,
+	"FechaDeVencimiento": "/Date(1094771530000)/",
+	"Lote": ""
+}, {
+	"ID": "7",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 658.86,
+	"FechaDeVencimiento": "/Date(1077750730000)/",
+	"Lote": ""
+}, {
+	"ID": "8",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 1352.83,
+	"FechaDeVencimiento": "/Date(1474326730000)/",
+	"Lote": ""
+}, {
+	"ID": "9",
+	"___FK_19228ec8467af31c14620a0b_00018": "",
+	"___FK_19228ec8467af31c14620a0b_00024": "",
+	"CantidadIngresada": 1919.65,
+	"FechaDeVencimiento": "/Date(1051139530000)/",
+	"Lote": ""
+}]

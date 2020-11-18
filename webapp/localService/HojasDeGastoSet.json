@@ -1,0 +1,36 @@
+[{
+	"ID": "66945",
+	"Paciente": "Paciente 1",
+	"Ojo": "derecho",
+	"Cirugia": "Vitrectomía",
+	"FechaProcedimiento": "/Date(1602460800000)/",
+	"Estatus": "abierto"
+}, {
+	"ID": "66944",
+	"Paciente": "Paciente 2",
+	"Ojo": "ambos",
+	"Cirugia": "Vitrectomía",
+	"FechaProcedimiento": "/Date(1602460800000)/",
+	"Estatus": "abierto"
+}, {
+	"ID": "66943",
+	"Paciente": "Paciente 3",
+	"Ojo": "izquierdo",
+	"Cirugia": "Catarata",
+	"FechaProcedimiento": "/Date(1602374400000)/",
+	"Estatus": "abierto"
+}, {
+	"ID": "66942",
+	"Paciente": "Paciente 4",
+	"Ojo": "derecho",
+	"Cirugia": "Vitrectomía",
+	"FechaProcedimiento": "/Date(1602288000000)/",
+	"Estatus": "cerrado"
+}, {
+	"ID": "66941",
+	"Paciente": "Paciente 5",
+	"Ojo": "izquierdo",
+	"Cirugia": "Vitrectomía",
+	"FechaProcedimiento": "/Date(1602201600000)/",
+	"Estatus": "abierto"
+}]

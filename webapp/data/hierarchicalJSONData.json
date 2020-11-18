@@ -1,0 +1,316 @@
+{
+	"static": {},
+	"combined": {
+		"InsumosSet": [{
+			"ID": "1",
+			"Lote": "FGR334",
+			"Nodes": [{
+				"ID": "1",
+				"Lote": "FGR334"
+			}]
+		}, {
+			"ID": "2",
+			"Lote": "FGR335",
+			"Nodes": [{
+				"ID": "2",
+				"Lote": "FGR335",
+				"Nodes": [{
+					"ID": "3",
+					"Lote": "FGR335",
+					"Nodes": [{
+						"ID": "6",
+						"Lote": "HJDL333"
+					}, {
+						"ID": "7",
+						"Lote": "HJDL333"
+					}, {
+						"ID": "8",
+						"Lote": "HJDL333"
+					}]
+				}]
+			}]
+		}, {
+			"ID": "3",
+			"Lote": "HJDL333"
+		}, {
+			"ID": "4",
+			"Lote": "NNVE231",
+			"Nodes": [{
+				"ID": "4",
+				"Lote": "NNVE231",
+				"Nodes": [{
+					"ID": "5",
+					"Lote": "NNVE231"
+				}]
+			}]
+		}, {
+			"ID": "5",
+			"Lote": "FG333"
+		}],
+		"ProductosSet": [{
+			"ID": "1",
+			"Nodes": [{
+				"ID": "1",
+				"Nodes": [{
+					"ID": "2",
+					"Nodes": [{
+						"ID": "3",
+						"Nodes": [{
+							"ID": "4",
+							"Nodes": [{
+								"ID": "4",
+								"Nodes": [{
+									"ID": "5"
+								}]
+							}]
+						}]
+					}, {
+						"ID": "2",
+						"Nodes": [{
+							"ID": "3",
+							"Nodes": [{
+								"ID": "6"
+							}, {
+								"ID": "7"
+							}, {
+								"ID": "8"
+							}]
+						}]
+					}]
+				}, {
+					"ID": "5"
+				}, {
+					"ID": "1"
+				}]
+			}]
+		}, {
+			"ID": "2"
+		}, {
+			"ID": "3"
+		}],
+		"HojasDeGastoSet": [{
+			"ID": "66945",
+			"Nodes": [{
+				"ID": "3"
+			}, {
+				"ID": "8"
+			}]
+		}, {
+			"ID": "66944",
+			"Nodes": [{
+				"ID": "2"
+			}, {
+				"ID": "5"
+			}, {
+				"ID": "7"
+			}]
+		}, {
+			"ID": "66943",
+			"Nodes": [{
+				"ID": "1"
+			}, {
+				"ID": "4"
+			}, {
+				"ID": "6"
+			}]
+		}, {
+			"ID": "66942"
+		}, {
+			"ID": "66941"
+		}],
+		"InsumosEnHojaDeGastoSet": [{
+			"ID": "1",
+			"modificable": true,
+			"NombreProducto": "Aplicadores",
+			"Lote": "FGR334",
+			"CantidadEntregada": "10",
+			"CantidadGastada": "0",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66943",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66943",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "1"
+		}, {
+			"ID": "2",
+			"modificable": true,
+			"NombreProducto": "Aplicadores",
+			"Lote": "FGR335",
+			"CantidadEntregada": "8",
+			"CantidadGastada": "0",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66944",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66944",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "2"
+		}, {
+			"ID": "3",
+			"modificable": false,
+			"NombreProducto": "Aplicadores",
+			"Lote": "FGR335",
+			"CantidadEntregada": "10",
+			"CantidadGastada": "1",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66945",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66945",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "2"
+		}, {
+			"ID": "4",
+			"modificable": true,
+			"NombreProducto": "Cuchillete 22",
+			"Lote": "NNVE231",
+			"CantidadEntregada": "5",
+			"CantidadGastada": "2",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66943",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66943",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "4"
+		}, {
+			"ID": "5",
+			"modificable": true,
+			"NombreProducto": "Cuchillete 22",
+			"Lote": "NNVE231",
+			"CantidadEntregada": "3",
+			"CantidadGastada": "0",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66944",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66944",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "4"
+		}, {
+			"ID": "6",
+			"modificable": true,
+			"NombreProducto": "Agua Estéril Bolsa x 500 ml",
+			"Lote": "HJDL333",
+			"CantidadEntregada": "5",
+			"CantidadGastada": "0",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66943",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66943",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "3"
+		}, {
+			"ID": "7",
+			"modificable": true,
+			"NombreProducto": "Agua Estéril Bolsa x 500 ml",
+			"Lote": "HJDL333",
+			"CantidadEntregada": "6",
+			"CantidadGastada": "0",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66944",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66944",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "3"
+		}, {
+			"ID": "8",
+			"modificable": false,
+			"NombreProducto": "Agua Estéril Bolsa x 500 ml",
+			"Lote": "HJDL333",
+			"CantidadEntregada": "5",
+			"CantidadGastada": "0",
+			"Revisado": false,
+			"Oservaciones": null,
+			"IDHojaDeGasto": "66945",
+			"___FK_c7315f01b16170cc144e7cbf_00016": "66945",
+			"___FK_c7315f01b16170cc144e7cbf_00018": "3"
+		}, {
+			"ID": "9",
+			"modificable": null,
+			"NombreProducto": null,
+			"Lote": null,
+			"CantidadEntregada": null,
+			"CantidadGastada": null,
+			"Revisado": null,
+			"Oservaciones": null,
+			"IDHojaDeGasto": null,
+			"___FK_c7315f01b16170cc144e7cbf_00016": null,
+			"___FK_c7315f01b16170cc144e7cbf_00018": null
+		}],
+		"CategoriasDeProductosSet": [{
+			"ID": "1"
+		}, {
+			"ID": "2"
+		}, {
+			"ID": "3"
+		}, {
+			"ID": "4"
+		}, {
+			"ID": "5"
+		}, {
+			"ID": "6"
+		}, {
+			"ID": "7"
+		}, {
+			"ID": "8"
+		}, {
+			"ID": "9"
+		}, {
+			"ID": "10",
+			"Nodes": [{
+				"ID": "1",
+				"Nodes": [{
+					"ID": "1",
+					"Nodes": [{
+						"ID": "2",
+						"Nodes": [{
+							"ID": "3",
+							"Nodes": [{
+								"ID": "4",
+								"Nodes": [{
+									"ID": "4",
+									"Nodes": [{
+										"ID": "5"
+									}]
+								}]
+							}]
+						}, {
+							"ID": "2",
+							"Nodes": [{
+								"ID": "3",
+								"Nodes": [{
+									"ID": "6"
+								}, {
+									"ID": "7"
+								}, {
+									"ID": "8"
+								}]
+							}]
+						}]
+					}, {
+						"ID": "5"
+					}, {
+						"ID": "1"
+					}]
+				}]
+			}, {
+				"ID": "3"
+			}]
+		}, {
+			"ID": "11",
+			"Nodes": [{
+				"ID": "2"
+			}]
+		}, {
+			"ID": "12"
+		}, {
+			"ID": "13"
+		}, {
+			"ID": "14"
+		}],
+		"OrdenesDeCompraSet": [{
+			"ID": "1",
+			"Destino": "Farmacia",
+			"TerminosEntrega": "1-3 días",
+			"RealizadoPor": "Carolina",
+			"AprobadoPor": "LCorrales",
+			"RevisadoPor": "AJOrjuela",
+			"TerminosPago": "60 días",
+			"Cargada": false,
+			"Cerrada": false,
+			"Proveedor": "Proveedor 34",
+			"___FK_c6035ee7cb2cfdd214621954_00018": null,
+			"___FK_6275a90361ff71251463749d_00012": null
+		}]
+	}
+}

@@ -1,0 +1,111 @@
+[{
+	"ID": "0",
+	"FechaDeGeneracion": "/Date(1286752330000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": false,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "1",
+	"FechaDeGeneracion": "/Date(1160262730000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": false,
+	"Entregado": false,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "2",
+	"FechaDeGeneracion": "/Date(1483053130000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": true,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "3",
+	"FechaDeGeneracion": "/Date(1454022730000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": false,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "4",
+	"FechaDeGeneracion": "/Date(1040080330000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": false,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "5",
+	"FechaDeGeneracion": "/Date(1247353930000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": true,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "6",
+	"FechaDeGeneracion": "/Date(1234134730000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": true,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "7",
+	"FechaDeGeneracion": "/Date(1447283530000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": false,
+	"Entregado": false,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "8",
+	"FechaDeGeneracion": "/Date(1459725130000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": true,
+	"Entregado": false,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}, {
+	"ID": "9",
+	"FechaDeGeneracion": "/Date(1335309130000)/",
+	"RealizadoPor": "",
+	"BodegaDeDestino": "",
+	"Revisado": false,
+	"Entregado": true,
+	"Proveedor": "",
+	"RevisadoPor": "",
+	"Area": "",
+	"___FK_6275a90361ff71251463749d_00016": ""
+}]

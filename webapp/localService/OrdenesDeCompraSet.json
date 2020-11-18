@@ -1,0 +1,14 @@
+[{
+	"ID": "1",
+	"Destino": "Farmacia",
+	"TerminosEntrega": "1-3 días",
+	"RealizadoPor": "Carolina",
+	"AprobadoPor": "LCorrales",
+	"RevisadoPor": "AJOrjuela",
+	"TerminosPago": "60 días",
+	"Cargada": false,
+	"Cerrada": false,
+	"Proveedor": "Proveedor 34",
+	"___FK_c6035ee7cb2cfdd214621954_00018": "",
+	"___FK_6275a90361ff71251463749d_00012": ""
+}]
